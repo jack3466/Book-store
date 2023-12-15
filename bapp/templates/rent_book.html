@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Book</title>
+</head>
+<style>
+    body {
+        background-image: url(https://img.freepik.com/free-photo/top-view-school-supplies-with-copyspace_23-2148198139.jpg?w=1060&t=st=1702439673~exp=1702440273~hmac=9fb91e150c6f4793d8b1ca5e95e0d339352c99a67611d7b9aa03f3b968f19d7b);
+        background-size: cover;
+    }
+
+    p {
+        color: bisque;
+    }
+
+    .card {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 70px;
+        padding: 30px;
+        background-color: rgba(55, 55, 55, 0.546);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.505);
+        color: #f0e5e5a0;
+        background: blur 20px;
+        text-align: center;
+    }
+</style>
+<body>
+<!-- ?<div class="card">
+    <h1>Rent Book</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="user">Select User:</label>
+        <input id="user" name="user" required>
+            {% for user in users %}
+                <option value="{{ user.id }}">{{ user.username }}</option>
+            {% endfor %}
+    </input>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="email">Book Name</label>
+        <h4 class="color">{{ book.title }}</h4>
+        <br><br>
+        <label for="rented_date">Rented Date</label>
+        <input type="date" id="rented_date" name="rented_date" required>
+        <br><br>
+        <label for="return_date">Return Date:</label>
+        <input type="date" id="return_date" name="return_date" required>
+        <br><br>
+        <input class="btn-primary" type="submit" value="Rent Book">
+    </form>
+</div> -->
+
+
+<body>
+    <div class="card">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+    
+          <br><br>
+      <input class="btn-outline-primary" type="submit" value="Rent Book">
+    </form>
+  </div>
+</body>
+</html>

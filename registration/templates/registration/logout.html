@@ -1,0 +1,30 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Logged out" %}{% endblock %}
+
+{% block content %}
+<style>
+    body {
+      background-image: url('https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg');
+      
+    }
+
+
+    p {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding: 20px;
+      background-color:rgba(101, 96, 96, 0.562);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.502);
+      color: #f0e5e5;
+    }
+
+    p {
+      text-align: center;
+    }
+  </style>
+<p>{% trans "Successfully logged out" %}.</p>
+{% endblock %}
